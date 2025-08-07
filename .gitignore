@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+local_settings.py
+db.sqlite3
+media/
+staticfiles/
+
+# Migrations
+**/migrations/
+!*/migrations/__init__.py
+
+# Environment variables
+.env
+.env.*
+
+# IDE/editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS & Windows
+.DS_Store
+Thumbs.db
+
+# PostgreSQL dumps or sensitive data
+*.sql
+
+# Coverage & testing
+.coverage
+htmlcov/
+coverage.xml
+.tox/
+nosetests.xml
+pytest_cache/
