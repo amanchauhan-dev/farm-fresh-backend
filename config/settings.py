@@ -18,16 +18,15 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
-STATIC_URL = 'static/'
+STATIC_URL = "static/"
 
 # Where collectstatic will put all files
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 
 # Optional: extra static file dirs
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, "static"),
 ]
-
 
 
 # Quick-start development settings - unsuitable for production
@@ -41,8 +40,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-MEDIA_URL = '/media/'
-MEDIA_ROOT = BASE_DIR / 'media'
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
 
 # Application definition
 
@@ -65,7 +64,7 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
 ROOT_URLCONF = "config.urls"
